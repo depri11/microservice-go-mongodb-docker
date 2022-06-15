@@ -18,6 +18,9 @@ func SetupRoute(r *mux.Router, db *mongo.Database) {
 	handler := handler.NewHandler(service)
 
 	route.HandleFunc("/", handler.FindAll).Methods("GET")
+	route.HandleFunc("/{id}", handler.FindById).Methods("GET")
 	route.HandleFunc("/", handler.Register).Methods("POST")
+	route.HandleFunc("/{id}", handler.UpdateUser).Methods("PUT")
+	route.HandleFunc("/{id}", handler.DeleteUser).Methods("DELETE")
 
 }

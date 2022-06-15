@@ -1,11 +1,29 @@
+### GET ALL
 GET http://localhost:8080/users/ HTTP/1.1
 Content-Type: application/json
 
-###
+### REGISTER
 POST http://localhost:8080/users/ HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstname": "devri",
-    "lastname": "wirlandika"
+    "firstname": "devri2",
+    "lastname": "2"
 }
+
+### FIND BY ID
+GET http://localhost:8080/users/62aa220d1af1fa1be71d38dc HTTP/1.1
+Content-Type: application/json
+
+### UPDATE
+PUT http://localhost:8080/users/62aa288afcf0e59c5fdc088d HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstname": "devri2 update",
+    "lastname": "2"
+}
+
+### DELETE
+DELETE http://localhost:8080/users/62aa288afcf0e59c5fdc088d HTTP/1.1
+Content-Type: application/json
