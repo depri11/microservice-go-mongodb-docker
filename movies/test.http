@@ -1,0 +1,31 @@
+### GET ALL
+GET http://localhost:8080/movies/ HTTP/1.1
+Content-Type: application/json
+
+### REGISTER
+POST http://localhost:8080/movies/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Spiderman 23",
+    "director": "Devri",
+    "rating": 4.5
+}
+
+### FIND BY ID
+GET http://localhost:8080/movies/62aad5821136b55656bd6693 HTTP/1.1
+Content-Type: application/json
+
+### UPDATE
+PUT http://localhost:8080/movies/62aad5821136b55656bd6693 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Spiderman 23 update",
+    "director": "Devri",
+    "rating": 4.5
+}
+
+### DELETE
+DELETE http://localhost:8080/movies/62aad5821136b55656bd6693 HTTP/1.1
+Content-Type: application/json
