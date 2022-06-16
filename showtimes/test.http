@@ -1,0 +1,35 @@
+### GET ALL
+GET http://localhost:8080/showtimes/ HTTP/1.1
+Content-Type: application/json
+
+### REGISTER
+POST http://localhost:8080/showtimes/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "date": "2 Januari 2022",
+    "movies": [
+        "62aad5601136b55656bd6692",
+        "62aad955bc7b8c454950d6c7"
+    ]
+}
+
+### FIND BY ID
+GET http://localhost:8080/showtimes/62aadb5f0b492e3a9b3e0e28 HTTP/1.1
+Content-Type: application/json
+
+### UPDATE
+PUT http://localhost:8080/showtimes/62aadb5f0b492e3a9b3e0e28 HTTP/1.1
+Content-Type: application/json
+
+{
+    "date": "2 Januari 2022 UPDATED",
+    "movies": [
+        "62aad5601136b55656bd6692",
+        "62aad955bc7b8c454950d6c7"
+    ]
+}
+
+### DELETE
+DELETE http://localhost:8080/showtimes/62aadb2c0b492e3a9b3e0e27 HTTP/1.1
+Content-Type: application/json
